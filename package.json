@@ -5,14 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/routes/food.js",
+    "start": "node food.js",
+    "dev-start": "nodemon food.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "express-jwt": "^6.0.0",
+    "mongodb": "^3.6.2",
+    "dotenv": "^8.2.0",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
